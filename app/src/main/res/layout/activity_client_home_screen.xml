@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_client_home_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/bg"
+    tools:context="com.example.hbsha.sprom.ClientHomeScreen">
+
+
+    <Button
+        android:theme="@style/CustomButton"
+        android:text="TEAMS"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BTNCRTTEAM"
+        android:onClick="onClickCreateTeam"
+        android:layout_below="@+id/BTNCRTPROJECT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:theme="@style/CustomButton"
+        android:text="Create Task"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BTNCREATETASK"
+        android:onClick="onClickClientAddTask"
+        android:layout_below="@+id/BTNCRTTEAM"
+        android:layout_alignStart="@+id/BTNCRTTEAM"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:theme="@style/CustomButton"
+        android:text="VIEW BACKLOG"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BTNVIEWBACKLOG"
+        android:onClick="onClickViewBackLog"
+        android:layout_below="@+id/BTNCREATETASK"
+        android:layout_alignStart="@+id/BTNCREATETASK"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:theme="@style/CustomButton"
+        android:text="VIEW PROJECT"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BTNVIEWPROJ"
+        android:onClick="onClickViewproject"
+        android:layout_below="@+id/BTNVIEWBACKLOG"
+        android:layout_alignStart="@+id/BTNVIEWBACKLOG"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:theme="@style/CustomButton"
+        android:text="VIEW KANBANBOARD"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BTNVIEWKANBAN"
+        android:onClick="onClickViewkbBoard"
+        android:layout_below="@+id/BTNVIEWPROJ"
+        android:layout_alignStart="@+id/BTNVIEWPROJ"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:theme="@style/CustomButton"
+        android:text="CREATE PROJECT"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BTNCRTPROJECT"
+        android:onClick="CreateProject"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/BTNCRTTEAM"
+        android:layout_marginTop="23dp" />
+
+
+</RelativeLayout>
+

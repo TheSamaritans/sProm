@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_and_modify_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hbsha.sprom.RegisterActivity">
+
+    <TextView
+        android:text="Registeration Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/reg_form" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/reg_form"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/userID_text"
+        android:layout_toEndOf="@+id/reg_form"
+        android:layout_alignStart="@+id/reg_form" />
+
+    <TextView
+        android:text="User ID:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_form"
+        android:layout_marginTop="27dp"
+        android:id="@+id/userID"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:ems="10"
+        android:layout_below="@+id/userID"
+        android:layout_marginTop="15dp"
+        android:id="@+id/empname_text"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/empName"
+        android:layout_alignStart="@+id/userID_text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/empname_text"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/empid_text"
+        android:layout_toEndOf="@+id/empID"
+        android:layout_alignStart="@+id/empname_text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/empid_text"
+        android:layout_toEndOf="@+id/emailID"
+        android:id="@+id/email_text"
+        android:layout_alignStart="@+id/empid_text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/pwd_text"
+        android:layout_below="@+id/email_text"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/password"
+        android:layout_alignStart="@+id/email_text" />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/role_spinner"
+        android:layout_alignStart="@+id/pwd_text"
+        android:layout_below="@+id/pwd_text"
+        android:layout_alignBottom="@+id/roleID" />
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_submit"
+        android:onClick="onClickRegister"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/reg_form" />
+
+    <TextView
+        android:text="Emp Name :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empName"
+        android:layout_alignBaseline="@+id/empname_text"
+        android:layout_alignBottom="@+id/empname_text"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Email Id :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailID"
+        android:layout_alignBaseline="@+id/email_text"
+        android:layout_alignBottom="@+id/email_text"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Password  :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_alignBaseline="@+id/pwd_text"
+        android:layout_alignBottom="@+id/pwd_text"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Role  :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/roleID"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/pwd_text"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignStart="@+id/empID" />
+
+    <TextView
+        android:text=" Emp ID :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empID"
+        android:layout_alignBaseline="@+id/empid_text"
+        android:layout_alignBottom="@+id/empid_text"
+        android:layout_alignEnd="@+id/emailID" />
+
+
+</RelativeLayout>

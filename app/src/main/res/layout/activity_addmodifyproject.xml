@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_addmodifyproject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hbsha.sprom.addmodifyproject">
+
+    <TextView
+        android:text="VIEW/MODIFY PROJECT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/cretepro" />
+
+    <TextView
+        android:text="Project Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cretepro"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:id="@+id/textView16"
+        android:layout_toStartOf="@+id/cretepro"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/cretepro"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/updatetxtproname" />
+
+    <TextView
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updatetxtproname"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/textView17"
+        android:layout_alignEnd="@+id/textView2"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/updatetxtproname"
+        android:layout_alignStart="@+id/updatetxtproname"
+        android:layout_marginTop="23dp"
+        android:id="@+id/updatetxtteammem" />
+
+    <TextView
+        android:text="Project Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updatetxtteammem"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/textView18"
+        android:textSize="18sp"
+        android:layout_alignEnd="@+id/textView17" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/updatetxtteammem"
+        android:layout_toEndOf="@+id/textView18"
+        android:layout_marginTop="33dp"
+        android:id="@+id/updatetxtdesc" />
+
+    <TextView
+        android:text="Team Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updatetxtdesc"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView19"
+        android:textSize="18sp"
+        android:layout_toStartOf="@+id/updatetxtdesc" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/updatetxtduedate"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_toEndOf="@+id/textView19" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/updateproremobutton"
+        android:layout_toEndOf="@+id/textView16" />
+
+    <Button
+        android:text="UPDATE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateprobutton"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/textView2"
+        android:onClick="updateprojects" />
+
+    <Button
+        android:text="CANCEL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button2"
+        android:onClick="goback" />
+
+    <Button
+        android:text="REMOVE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateproremobutton"
+        android:onClick="removeproject"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/updatetxtteammem" />
+
+</RelativeLayout>

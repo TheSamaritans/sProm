@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hbsha.sprom">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ViewBackLogScreen" />
+        <activity android:name=".CreateTask" />
+        <activity android:name=".ClientHomeScreen" />
+        <activity android:name=".viewpro" />
+        <activity android:name=".LeadHomeScreen" />
+        <activity android:name=".MeetingReq" />
+        <activity android:name=".MeetingList" />
+        <activity android:name=".addmodifyproject" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewAndModifyTask" />
+        <activity android:name=".viewkbBoard" />
+        <activity android:name=".customlistitems" />
+        <activity android:name=".createProject" />
+        <activity android:name=".SelectSprint" />
+        <activity android:name=".createTeam" />
+        <activity android:name=".viewteam" />
+        <activity android:name=".viewTeammem" />
+        <activity android:name=".addmemtoteam" />
+        <activity android:name=".MemberHomeScreen" />
+        <activity android:name=".removeteammem" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".createsprint"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_createsprint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hbsha.sprom.createsprint">
+
+    <TextView
+        android:text="CREATE SPRINT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:id="@+id/txtCS"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Project Name: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/txtprojname"
+        android:layout_below="@+id/txtCS"
+        android:layout_toStartOf="@+id/txtCS"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Sprint ID: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/txtsprintid"
+        android:layout_below="@+id/txtprojname"
+        android:layout_alignStart="@+id/txtprojname"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Start Date: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtsprintid"
+        android:layout_alignStart="@+id/txtsprintid"
+        android:layout_marginTop="50dp"
+        android:id="@+id/txtSD"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="End Date: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSD"
+        android:layout_alignStart="@+id/txtSD"
+        android:layout_marginTop="49dp"
+        android:id="@+id/txtED"
+        android:textSize="18sp" />
+
+    <Button
+        android:text="SUBMIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:id="@+id/button"
+        android:onClick="insertSprint"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/epjn"
+        android:layout_alignBaseline="@+id/txtprojname"
+        android:layout_alignBottom="@+id/txtprojname"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/esd"
+        android:layout_alignBaseline="@+id/txtSD"
+        android:layout_alignBottom="@+id/txtSD"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/eed"
+        android:layout_alignBaseline="@+id/txtED"
+        android:layout_alignBottom="@+id/txtED"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/espid"
+        android:layout_alignBaseline="@+id/txtsprintid"
+        android:layout_alignBottom="@+id/txtsprintid"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
