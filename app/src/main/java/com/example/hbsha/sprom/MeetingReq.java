@@ -159,7 +159,7 @@ public class MeetingReq  extends AppCompatActivity{
                     new javax.mail.Authenticator() {
                         //Authenticating the password
                         protected PasswordAuthentication getPasswordAuthentication() {
-                            return new PasswordAuthentication("mahesh9128@gmail.com", "SYNCMASTERM9128");
+                            return new PasswordAuthentication("awsid@gmail.com", "SomePassword");
                         }
                     });
 
